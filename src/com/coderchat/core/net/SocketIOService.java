@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 
-package com.coderchat.core;
+package com.coderchat.core.net;
 
+import com.coderchat.core.Message;
 import com.github.nkzawa.socketio.client.IO;
 import com.github.nkzawa.socketio.client.Socket;
 import com.google.gson.Gson;

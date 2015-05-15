@@ -11,12 +11,6 @@ package com.coderchat.core;
  * @author Yemi Kudaisi
  * @email yemikudaisi@gmail.com
  */
-public class LoginMessage extends Message {
-    
-    private User user;
-    public LoginMessage(User u){
-        this.user =u;  
-        super.setRequest(RequestType.AUTH);
-    }
+public class LoginResponse {
 
 }

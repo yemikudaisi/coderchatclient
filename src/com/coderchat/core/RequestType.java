@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.coderchat.core;
 
 /**
  *
  * @author yemikudaisi
+ * 
+ * This enum is used to specify the protocol for interpreting transmissions
+ * between the server and clients
+ * 
+ *  AUTH    -   Authentication (i.e Login)
+ *  PRP     -   Profile Request Protocol   
+ *  FLP     -   Friend List Update Protocol
+ *  IMP     -   Instant Message Protocol
+ *  BMP     -   Broadcast message protocol
+ *  FSP     -   File System protocol
+ *  SFP     -   Single File protocol
+ *  SCP     -   Source code protocol
  */
 public enum RequestType {
-    LOGIN, BROADCAST, PERSONAL, FILESYSTEM, FILE;
+    AUTH, PRP, FLP, IMP, BROADCAST_MESSAGE, FILESYSTEM, FILE;
 }

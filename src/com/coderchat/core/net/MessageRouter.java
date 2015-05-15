@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.coderchat.core;
+package com.coderchat.core.net;
 
+import com.coderchat.core.Message;
+import com.coderchat.core.NetworkConnectionService;
 import com.coderchat.core.helpers.DialogHelper;
 import com.google.gson.Gson;
 import java.io.IOException;
@@ -16,7 +18,7 @@ import java.net.SocketException;
  */
 public class MessageRouter implements Runnable {
     private final Message chatMessage;
-    private Gson gson = new Gson();
+    private final Gson gson = new Gson();
     
     public MessageRouter(Message message){
         this.chatMessage = message;
@@ -28,7 +30,7 @@ public class MessageRouter implements Runnable {
         try{
             //NetworkConnectionService.getOutStream().writeBytes(text);
             NetworkConnectionService.getOutWriter().println(text);
-            DialogHelper.showMessage("Test", NetworkConnectionService.getInBufferReader().readLine());
+            //DialogHelper.showMessage("Test", NetworkConnectionService.getInBufferReader().readLine());
         }catch(SocketException ex){
             NetworkConnectionService.resetConnection();
         }catch (IOException ex) {

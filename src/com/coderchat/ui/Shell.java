@@ -6,7 +6,7 @@
 package com.coderchat.ui;
 
 import com.coderchat.core.Message;
-import com.coderchat.core.MessageRouter;
+import com.coderchat.core.net.MessageRouter;
 import com.coderchat.core.NetworkConnectionService;
 import java.io.BufferedReader;
 import java.io.IOException;

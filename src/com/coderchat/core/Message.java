@@ -19,10 +19,10 @@ public class Message {
     private RequestType request;
     
     public Message(){
-        this( new User("destination_user"), new User(Globals.getLoginUser()), "", RequestType.BROADCAST);
+        this( new User("destination_user"), new User(Globals.getLoginUser()), "", RequestType.BROADCAST_MESSAGE);
     }
     public Message(String data){
-        this( new User(""), new User(""), data, RequestType.BROADCAST);
+        this( new User(""), new User(""), data, RequestType.BROADCAST_MESSAGE);
     }
     
     public Message( User dest, User from, String c, RequestType req){

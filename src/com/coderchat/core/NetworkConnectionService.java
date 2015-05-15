@@ -24,9 +24,9 @@ public class NetworkConnectionService {
     // TODO Handle attempt to reconnect to the Server after a fixed timeout
     
     private static final String serverURL = "127.0.0.1";
-    private static final int serverPort = 8000;
+    private static final int serverPort = 7001;
     private static Socket clientSocket = null;
-    // out
+   
     private static DataOutputStream outStream = null;
     private static PrintWriter outWriter = null;
     // in
