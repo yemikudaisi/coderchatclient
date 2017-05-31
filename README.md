@@ -1,5 +1,5 @@
 # coderchatclient
-An Instant Messaging chat application with code highlighting text area. Aimed at enabling developers to share codes with friends as they are being typed out.
+An Instant Messaging chat application (discontinued) with code highlighting text area. Aimed at enabling developers to share codes with friends as they are being typed out.
 
 
 ## Architecture
