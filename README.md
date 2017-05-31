@@ -9,6 +9,10 @@ The client application is being developed in ```Java SE``` while the server is a
 
 If you have found a bug or if you have a feature request, please report them at this repository issues section.
 
+## Status (Discontinued)
+
+This project has been discontinued in favour of a an XMPP [client](https://github.com/yemikudaisi/codechat-client) that implemts the the CodeChat protocol as an extension.
+
 ## Author
 
 [Yemi Kudaisi](https://github.com/yemikudaisi)
